@@ -1,6 +1,8 @@
 package sliceUtils
 
-import "reflect"
+import (
+	"reflect"
+)
 
 func RemoveAtIndex[T any](s []T, index int) []T {
 	return append(s[:index], s[index+1:]...)
